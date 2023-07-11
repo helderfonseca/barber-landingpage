@@ -1,0 +1,84 @@
+// ----- Header styles ----------
+
+header {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-icons {
+  display: flex;
+  gap: 1.4rem;
+}
+
+i {
+    color: $white-light;
+}
+
+.header-icons a:hover {
+  i {
+    animation: translateY 0.8s infinite alternate;
+    color: $red-light;
+  }
+}
+
+@keyframes translateY {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+
+.header-schedule {
+  a {
+    border: 1px solid $white-normal;
+    color: $white-normal;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    transition: all 0.8s;
+  }
+
+  a:hover {
+    border: 1px solid $red-light;
+    background-color: $red-light;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  header {
+    margin-top: 2rem;
+  }
+  
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .header-icons {
+    i {
+      font-size: 3.4rem;
+    }
+  }
+
+  .header-logo img {
+    width: min(100%, 14rem);
+    height: auto;
+    object-fit: cover;
+  }
+
+  .header-schedule {
+    a {
+      display: none;
+    }
+  }
+}

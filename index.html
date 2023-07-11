@@ -1,0 +1,126 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Barber Landing Page</title>
+  </head>
+  <body>
+    <!--Header-->
+    <div class="bg-home">
+      <header>
+        <nav class="header-content container">
+          <div class="header-icons">
+            <a href="#">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>
+          </div>
+          <div class="header-logo">
+            <a href="/index.html">
+              <img src="assets/logo.svg" alt="Logo Barber">
+            </a>
+          </div>
+          <div class="header-schedule">
+            <a href="#">
+              Schedule a time
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main class="hero container">
+        <h1>Style is a reflection of your attitude and your personality.</h1>
+        <p>Operating Hours: <span>9am - 5pm</span></p>
+        <a href="#" class="button-contact" target="_blank">
+          Schedule a time
+        </a>
+      </main>
+    </div>
+
+    <!-- About -->
+    <section class="about">
+      <div class="container about-content">
+        <div>
+          <img src="/assets/images.svg" alt="About my barber company">
+        </div>
+        <div class="about-description">
+          <h2>About</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem deleniti quas libero ex totam laborum quod eius facere saepe doloribus!</p>
+          <p>Operation hours: <strong>9am</strong> - <strong>5pm</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="services-content container">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae delectus culpa? Dolores, tempora minus cum alias asperiores aperiam illo?</p>
+      </div>
+
+      <section class="haircuts">
+        <div class="haircut">
+          <img src="/assets/corte1.png" alt="Normal haircut">
+          <div class="haircut-info">
+            <p>Normal haircut</p>
+            <button>300$00</button>
+          </div>
+        </div>
+        <div class="haircut">
+          <img src="/assets/corte2.png" alt="Complete beard">
+          <div class="haircut-info">
+            <p>Complete beard</p>
+            <button>600$00</button>
+          </div>
+        </div>
+        <div class="haircut">
+          <img src="/assets/corte3.png" alt="Hair and beard">
+          <div class="haircut-info">
+            <p>Hair and beard</p>
+            <button>1000$00</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Map -->
+    <section class="map-contact">
+      <h2>Know us</h2>
+      <div id="map"></div>
+    </section>
+
+    <footer class="footer-content">
+      <div class="footer-icons">
+        <a href="#">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-youtube fa-2x"></i>
+        </a>
+      </div>
+      <div class="footer-logo">
+        <a href="/index.html">
+          <img src="assets/logo.svg" alt="Logo Barber">
+        </a>
+      </div>
+      <p>Copyright&copy; 2023 | Dev Barber - All rights reserved.</p>
+    </footer>
+
+    <script defer src="/js/script.js"></script>
+  </body>
+</html>
