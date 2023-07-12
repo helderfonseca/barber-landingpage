@@ -239,7 +239,7 @@
 
 //-----------------------------------
 
-//----------------------------------
+//---------- FOOTER -----------------
 
 .footer-content {
   display: flex;
@@ -288,4 +288,52 @@ i {
   }
 }
 
+//---------------------------------------
+
+//-------------- WhatsApp ---------------
+
+.btn-whatsapp {
+  position: fixed;
+  right: 1.4rem;
+  bottom: 2.4rem;
+  z-index: 999;
+
+  img {
+    max-width: 6rem;
+    transition: transform 0.8s;
+  }
+  img:hover {
+    transform: scale(1.11);
+  }
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 8rem;
+  width: 9rem;
+  text-align: center;
+  color: $black-normal;
+  background: $white-normal;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-whatsapp {
+    bottom: 3.6rem;
+    img {
+      max-width: 4.5rem;
+    }
+  }
+}
 
