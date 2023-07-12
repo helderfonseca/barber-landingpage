@@ -294,8 +294,8 @@ i {
 
 .btn-whatsapp {
   position: fixed;
-  right: 1.4rem;
-  bottom: 2.4rem;
+  right: 2.4rem;
+  bottom: -4.4rem;
   z-index: 999;
 
   img {
@@ -309,7 +309,7 @@ i {
 
 .tooltip-text {
   position: absolute;
-  bottom: 1.2rem;
+  bottom: 7.2rem;
   right: 8rem;
   width: 9rem;
   text-align: center;
@@ -330,7 +330,7 @@ i {
 
 @media only screen and (max-width: 768px) {
   .btn-whatsapp {
-    bottom: 3.6rem;
+    bottom: -3.6rem;
     img {
       max-width: 4.5rem;
     }
